@@ -1,0 +1,28 @@
+/* 
+colors and font styles
+
+dark background (hero and footer )
+    #1F2937
+hero main (this website is awesome)
+    48px extra-bold #F9FAF8
+Hero secondary, header link
+    18px #E5E7EB
+Header logo
+    24px bold #F9FAF8 
+
+button color, call to action background
+    #3882F6
+information header
+    36px extra-bold #1F2937
+
+quote bg
+    #E5E7EB
+quote text
+    36px light italic #1F2937
+*/
+
+body {
+    background-color: #1f2937;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    color: #F9FAF8;
+}
