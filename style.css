@@ -25,4 +25,205 @@ body {
     background-color: #1f2937;
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
     color: #F9FAF8;
+
+    justify-content: flex-start;
+    align-items: center;
 }
+
+h1,
+ul ,
+p,
+div,
+button {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 16px;
+}
+
+/* header area */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 320px;
+}
+.header-logo{
+    font-size: 24px;
+    font-weight: 900;
+}
+.header-links {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+/* awesome area */
+.thiswebsite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 320px;
+}
+
+.thiswebsiteleft {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+h1 .awesome {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+
+
+p .subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 100;
+}
+
+.signup-button {
+    width: 100px;
+    height: 30px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-weight: 700;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #F9FAF8;    
+    /* padding: 10px 5px; */
+    /* margin: 20px; */
+}
+
+.thiswebsite .signup-button{
+    border-style: none;
+}
+
+/* information area */
+.information {
+    background-color: #F9FAF8;
+    color: #1f2937;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 320px;
+    /* padding: 20px 120px;  to adjust in future */
+}
+.fourboxes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.rbc {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 120px;                    
+    align-items: center;
+}
+
+.rbox img {
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    
+}
+
+.rbox-text {
+    color: #1f2937;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* quote area */
+
+.quote {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+    color: #1f2937;
+    padding: 20px 420px;
+    height: 240px;
+    flex-shrink: 1;
+}
+
+.quote-text{
+    /* max-height: 240px; */
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1F2937;
+    align-self: flex-start;
+}
+.quote-signature {
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* signup area */
+.signup {
+    background-color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex-basis: 900px;
+}
+.signup-container{
+    flex-basis: 550px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+    background-color: #3882F6;
+    border-radius: 5px;
+}
+.signup-left{
+    gap: 5px;
+}
+
+.signup-header{
+    font-weight: 900;
+    font-size: 16px;
+}
+.signup-text {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* footer area */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+
+/* 
+TO DO LIST:
+1. center page not with padding like it works now
+2. quote goes vertical when making the window narrower - it's paddings fault
+
+
+
+future (after it behaves as it should):
+3. add images
+4. add custom text
+5. use tools to change the color scheme
+6. link copyright wxlfrvm to mail (maybe)
+
+
+
+*/
