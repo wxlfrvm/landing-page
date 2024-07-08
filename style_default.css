@@ -1,14 +1,36 @@
+/* 
+colors and font styles
+
+dark background (hero and footer )
+    #1F2937
+hero main (this website is awesome)
+    48px extra-bold #F9FAF8
+Hero secondary, header link
+    18px #E5E7EB
+Header logo
+    24px bold #F9FAF8 
+
+button color, call to action background
+    #3882F6
+information header
+    36px extra-bold #1F2937
+
+quote bg
+    #E5E7EB
+quote text
+    36px light italic #1F2937
+*/
+
+
 body {
-    background-color: #463F3A;
+    background-color: #1f2937;
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
-    color: #F4F3EE;
+    color: #F9FAF8;
     justify-content: flex-start;
     align-items: center;
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
-    padding:0;
-    margin:0;
 }
 
 h1,
@@ -26,11 +48,11 @@ p span.excl {
 
 li.header-link a{
     text-decoration: none;
-    color: #F4F3EE;
+    color: #E5E7EB;
     font-size: 16px;
     display: inline-block;
     position: relative;
-    color: #F4F3EE;
+    color: #F9FAF8;
 }
     li.header-link a:after{
         content: '';
@@ -40,7 +62,7 @@ li.header-link a{
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #F4F3EE;
+        background-color: #F9FAF8;
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
     }
@@ -52,11 +74,12 @@ li.header-link a{
 
 a {
     text-decoration: none;
-    color:#F4F3EE;
+    color:#F9FAF8;
 }
 a:hover {
     text-decoration: underline;
 }
+
 
 img {
     object-fit: cover;
@@ -67,17 +90,13 @@ img {
 .signup-button {
     width: 140px;
     height: 40px;
-    background-color: #8A817C;
-    color: #F4F3EE;
+    background-color: #3882F6;
+    color: #E5E7EB;
     font-size: 16px;
     font-weight: 700;
     border-style: solid;
     border-radius: 5px;
-    border-color: #F4F3EE;    
-}
-.signup-button:hover{
-    background-color: #68605B;
-    cursor: pointer;
+    border-color: #F9FAF8;    
 }
 
 /* header area */
@@ -86,7 +105,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 20px 0;
+    padding-bottom: 20px;
     
 }
     .header {
@@ -139,30 +158,21 @@ img {
             padding: 0;
             font-size: 48px;
             font-weight: 900;
-            color: #F4F3EE;
+            color: #F9FAF8;
         }
 
         .subtext {
             flex-grow: 1;
             min-width: 300px;
             font-size: 18px;
-            color: #F4F3EE;
+            color: #E5E7EB;
             font-weight: 100;
         }
 
         .thiswebsite .signup-button{
             border-style: none;
-            align-self: center;
         }
-
-        .thiswebsiteright img{
-            width:auto;
-            height: 300px;
-            padding:0;
-            margin:0;
-            border: 3px solid #8A817C;
-            border-radius: 10px;
-        }
+        
 
 /* information area */
 .informationbg{
@@ -170,10 +180,10 @@ img {
     flex-direction: row;
     justify-content: center;
     padding: 20px 0;
-    background-color: #F4F3EE;
+    background-color: #F9FAF8;
 }
     .information {
-        color: #463F3A;
+        color: #1f2937;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -200,13 +210,13 @@ img {
         }
 
         .rbox img {
-            border: 3px solid #8A817C;
+            border: 3px solid #3882F6;
             border-radius: 10px;
         }
 
         .rbox-text {
-            color: #463F3A;
-            font-size: 14px;
+            color: #1f2937;
+            font-size: 12px;
             text-align: center;
             margin-top: 10px;
         }
@@ -217,8 +227,7 @@ img {
     flex-direction: row;
     justify-content: center;
     padding: 20px 0;
-    background-color: #BCB8B1;
-    gap: 10px;
+    background-color: #E5E7EB;
 }
     .quote {
         display:flex;
@@ -226,19 +235,23 @@ img {
         justify-content: center;
         flex-grow: 1;
         flex-shrink: 0;
-        max-width: 1000px;
-        color: #463F3A;
+        flex-basis: 1000px;
+        color: #1f2937;
         padding: 20px 420px;
-        height: 160px;
+        height: 240px;
+        /* flex-shrink: 0;
+        flex-grow: 1; */
         }
 
         .quote-text{
-            align-self: center;
+            /* max-height: 240px; */
             flex-direction: row;
+            flex-wrap: nowrap;
             font-size: 36px;
             font-weight: 100;
             font-style: italic;
-            color: #463F3A;
+            color: #1F2937;
+            align-self: flex-start;
         }
         .quote-signature {
             align-self: flex-end;
@@ -247,9 +260,8 @@ img {
         }
 
 /* signup area */
-
 .signupbg{
-    background-color: #F4F3EE;
+    background-color: #F9FAF8;
     display: flex;
     justify-content: center;
 }
@@ -257,27 +269,27 @@ img {
         padding: 50px;
         max-width: 1000px;
         flex-basis: 850px;
+        /* align-self: center;
+        flex-grow:1; */
     }
         .signup-container{
             
             display: flex;
             justify-content: space-between;
             padding: 30px 70px;
-            background-color: #8A817C
-    ;
+            background-color: #3882F6;
             border-radius: 5px;
         }
         .signup-left{
             gap: 5px;
-            flex-direction: column;
         }
 
         .signup-header{
             font-weight: 900;
-            font-size: 18px;
+            font-size: 16px;
         }
         .signup-text {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
         }
 
@@ -294,3 +306,12 @@ img {
         font-size: 16px;
         flex-basis: 1000px;
     }
+
+
+/* 
+
+future:
+
+5. use tools to change the color scheme
+
+*/
